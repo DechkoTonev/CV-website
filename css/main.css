@@ -1,0 +1,98 @@
+.row {
+    padding-top: 20px;
+}
+
+#personalInfoHiddenSection li a {
+	float: right;
+}
+
+.info-container {
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+#menu a{
+    color: #306a9c;
+}
+
+#menu > nav{
+    padding-left: 30px;
+    background-color: #f0f5f5 !important;
+}
+
+.info-container > span {
+    color: #306a9c;
+}
+
+#viewEducation .container > h2 {
+    text-align: center;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.carousel-inner > .item {
+    height: 450px;
+    background-color: #f0f5f5;
+}
+
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 470px;
+    width: auto;
+}
+
+.hr-title{
+    margin-bottom: 0;
+    height: 2px;
+    background-color: #f0f5f5;
+}
+
+.div-title {
+    background-color: #306a9c;
+    color: #f0f5f5;
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 35px;
+}
+
+.div-work-name {
+    background-color: #306a9c;
+    color: #f0f5f5;
+    border-radius: 35px;
+}
+
+.jumbotron-fluid {
+    color: #306a9c !important;
+    background-color: #f0f5f5 !important;
+}
+
+h1 {
+    color: #306a9c !important;
+}
+
+.work-container{
+    color: #306a9c;
+    background-color: #f0f5f5;
+    border-radius: 35px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+
+

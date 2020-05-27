@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dechko's CV Web Site</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+</head>
+<body onload="startApp()">
+
+<div id="app">
+    <header id="menu">
+        <nav class="navbar navbar-default navbar-static-top navbar-expand-md navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" id="linkMenuCVWebSiteButton" href="#">Dechko's CV Web Site</a>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="linkMenuPersonalInfo">Лична информация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="linkMenuWorkExperience">Трудов стаж</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="linkMenuEducation">Образование и обучение</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="linkMenuPersonalSkills">Лични умения и компетиции</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="row" id="viewPersonalInfo">
+            <div class="col-md-12">
+                <h2 class="display-8"><h1>Лична информация</h1></h2>
+                <hr class="hr-title">
+                <div id="personalInfoPublicSection">
+                    <div class="row">
+                        <div class="col-md">
+                            <p>
+                                Тази информация е лична. Натисни бутона, за да видиш повече за мен.
+                            </p>
+                            <a href="#" class="btn btn-primary" id="personalInfoShowMoreButton">Виж повече за мен</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="personalInfoHiddenSection" class="work-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="list-group list-group-flush">
+								<li class="list-group-item">Име:
+									<a>Дечко Тонев</a>
+								</li>
+								<li class="list-group-item">Адрес:
+                                    <a>с. Шейново, ул. "Москва" 21, община Казанлък, област Стара Загора</a>
+                                </li>
+								<li class="list-group-item">Телефон:
+                                    <a>0888462937</a>
+                                </li>
+								<li class="list-group-item">E-mail:
+                                    <a>dechkotonev15@gmail.com</a>
+                                </li>
+								<li class="list-group-item">Дата на раждане:
+                                    <a>4 Септември 2000г.</a>
+                                </li>
+							</ul>
+							<br/>
+                            <a href="#" class="btn btn-primary" id="personalInfoHideButton">Скрий</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="viewWorkExperience">
+            <div class="col-md-12">
+                <h2 class="display-3"><h1>Трудов стаж</h1></h2>
+                <hr class="hr-title">
+                <div class="row text-left">
+                    <div class="col-md-12 work-container">
+                        <h3 class="display-4">Настек ООД</h3>
+                        <a href="#hiddenSectionNashtech" class="btn btn-primary" id="showHiddenSectionNastechButton">Виж повече</a>
+                    </div>
+                    <div class="row col-md-12" id="hiddenSectionNashtech">
+                        <div class="work-container">
+                            <div class="col-md-10 info-container">
+                                <img src="content/images/nastech/nastech-logo.jpg" class="img-fluid" alt="Responsive image">
+                            </div>
+                            <div class="col-md-10 info-container">
+                                <a class="font-weight-bold">Дати (от - до):</a>
+                                <span>1 юни 2017 – 15 септември 2017</span>
+                            </div>
+                            <div class="col-md-10 info-container">
+                                <a class="font-weight-bold">Име и адрес на работодателя:</a>
+                                <span>Nastech (<a href="http://nastech.bg/" target="_blank">http://nastech.bg/</a>)</span>
+                            </div>
+                            <div class="col-md-10 info-container">
+                                <a class="font-weight-bold">Заемана длъжност:</a>
+                                <span>Техник(отстраняване на проблеми в LAN и PON мрежа)</span>
+                            </div>
+                            <div class="col-md-10 info-container">
+                                <a href="#showHiddenSectionNastechButton" class="btn btn-primary" id="hideHiddenSectionNastechButton">Скрий</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-right">
+                    <div class="col-md-12 work-container">
+                        <h3 class="display-4">Кафе-Бар "Milano"</h3>
+                        <a href="#hiddenSectionCafeMilano" class="btn btn-primary" id="showHiddenSectionCafeMilanoButton">Виж повече</a>
+                    </div>
+                    <div class="row col-md-12 text-right" id="hiddenSectionCafeMilano">
+                        <div class="work-container">
+                            <div class="col-md-12 info-container">
+                                <a class="font-weight-bold">Дати (от - до):</a>
+                                <span>3 август 2018 – 12 декември 2018</span>
+                            </div>
+                            <div class="col-md-12 info-container">
+                                <a class="font-weight-bold">Име и адрес на работодателя:</a>
+                                <span>Кафе „Милано“ (<a href="https://www.google.com/maps?cid=11591810977946206582&hl=en&gl=gb&shorturl=1" target="_blank">отвори локация</a>)</span>
+                                <br/>
+                            </div>
+                            <div class="col-md-12 info-container">
+                                <a class="font-weight-bold">Заемана длъжност:</a>
+                                <span>Барман</span>
+                                <br/>
+                            </div>
+                            <div class="container col-md-8">
+                                <div id="cafemilanogallery" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#cafemilanogallery" data-slide-to="0" class="active"></li>
+                                        <li data-target="#cafemilanogallery" data-slide-to="1"></li>
+                                        <li data-target="#cafemilanogallery" data-slide-to="2"></li>
+                                        <li data-target="#cafemilanogallery" data-slide-to="3"></li>
+                                        <li data-target="#cafemilanogallery" data-slide-to="4"></li>
+                                        <li data-target="#cafemilanogallery" data-slide-to="5"></li>
+                                        <li data-target="#cafemilanogallery" data-slide-to="6 "></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="image" src="content/images/milano/milano_1.jpg" alt="Cafe Milano">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="image" src="content/images/milano/milano_2.jpg" alt="Cafe Milano">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="image" src="content/images/milano/milano_3.jpg" alt="Cafe Milano">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="image" src="content/images/milano/milano_4.jpg" alt="Cafe Milano">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="image" src="content/images/milano/milano_5.jpg" alt="Cafe Milano">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="image" src="content/images/milano/milano_6.jpg" alt="Cafe Milano">
+                                        </div>
+                                    </div>
+                                    <a class="left carousel-control" href="#cafemilanogallery" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#cafemilanogallery" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-12 info-container text-left">
+                                <a href="#showHiddenSectionCafeMilanoButton" class="btn btn-primary" id="hideHiddenSectionCafeMilanoButton">Скрий</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-left">
+                    <div class="col-md-12 work-container">
+                        <h3 class="display-4">Beach bar "Amour"</h3>
+                        <a href="#hiddenSectionBeachBarAmour" class="btn btn-primary" id="showHiddenSectionBeachBarAmourButton">Виж повече</a>
+                    </div>
+                    <div class="row col-md-12" id="hiddenSectionBeachBarAmour">
+                        <div class="work-container">
+                            <div class="col-md-10 info-container">
+                                <img src="content/images/beachbaramour/beach_bar_amour.jpg" class="img-fluid" alt="Responsive image">
+                            </div>
+                            <div class="col-md-10 info-container">
+                                <a class="font-weight-bold">Дати (от - до):</a>
+                                <span>6 юни 2019 – 23 август 2019</span>
+                            </div>
+                            <div class="col-md-10 info-container">
+                                <a class="font-weight-bold">Име и адрес на работодателя:</a>
+                                <span>Beach bar "Amour" (<a href="https://goo.gl/maps/Dd5LUmGhLTnBmM2m8" target="_blank">отвори локация</a>)</span>
+                            </div>
+                            <div class="col-md-10 info-container">
+                                <a class="font-weight-bold">Заемана длъжност:</a>
+                                <span>Барман</span>
+                            </div>
+                            <div class="container col-md-8">
+                                <div id="beachbaramourgallery" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#beachbaramourgallery" data-slide-to="0" class="active"></li>
+                                        <li data-target="#beachbaramourgallery" data-slide-to="1"></li>
+                                        <li data-target="#beachbaramourgallery" data-slide-to="2"></li>
+                                        <li data-target="#beachbaramourgallery" data-slide-to="3"></li>
+                                        <li data-target="#beachbaramourgallery" data-slide-to="4"></li>
+                                        <li data-target="#beachbaramourgallery" data-slide-to="5"></li>
+                                        <li data-target="#beachbaramourgallery" data-slide-to="6 "></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img class="image" src="content/images/beachbaramour/beach_bar_amour_1.jpg" alt="Beach Bar Amour">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="image" src="content/images/beachbaramour/beach_bar_amour_2.jpg" alt="Beach Bar Amour">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="image" src="content/images/beachbaramour/beach_bar_amour_3.jpg" alt="Beach Bar Amour">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="image" src="content/images/beachbaramour/beach_bar_amour_4.jpg" alt="Beach Bar Amour">
+                                        </div>
+
+                                        <div class="item">
+                                            <img class="image" src="content/images/beachbaramour/beach_bar_amour_5.jpg" alt="Beach Bar Amour">
+                                        </div>
+                                    </div>
+                                    <a class="left carousel-control" href="#beachbaramourgallery" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#beachbaramourgallery" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-10 info-container">
+                                <a href="#showHiddenSectionBeachBarAmourButton" class="btn btn-primary" id="hideHiddenSectionBeachBarAmourButton">Скрий</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="viewEducation">
+            <div class="col-md-12">
+                <h2 class="display-3"><h1>Образование и обучение</h1></h2>
+                <hr class="hr-title">
+                <div class="div-title">
+                    <p class="display-5">
+                        Моето първо училище е ОУ "Мати Болагрия", където учих от 1 до 5 клас.
+                    </p>
+                </div>
+                <div class="div-title">
+                    <p class="text-right">
+                        След 5 клас кандидатствах и бях приет в Природо-Математическа Гимназия "Никола Обрешков" в гр. Казанлък.
+                    </p>
+                </div>
+                <div class="div-title">
+                    <p>
+                        След 7 клас отново кандидатствах и бях приет в Природо-Математическа Гимназия "Никола Обрешков" с профил
+                        "Математика и информатика".
+                    </p>
+                </div>
+                <div class="div-title">
+                    <p class="text-right">
+                        В 8 клас записах курса Programming Basics във SoftUni и с него започнах обучението
+                        си в Софтуерния Университет.
+                    </p>
+                </div>
+                <div class="div-title">
+                    <p>
+                        След като завърших гимназия бях приет в Пловдивски университет "Паисий Хилендарски"
+                        със специалност "Бизнес информационни технологии".
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="jumbotron jumbotron-fluid">
+                            <div class="container">
+                                <h2>ОУ "Мати Болгария"</h2>
+                                <div class="col-md-12 info-container" >
+                                    <img src="content/images/matibolgaria/matibolgaria.jpg" class="img-fluid" alt="Responsive image">
+                                </div>
+                                <br>
+                                <div class="lead"><p>В периода от 2008 до 2012 година бях възпитаник на ОУ "Мати Болгария".</p>
+                                    <p>
+                                    За този период от 4 години съм взимал участие в доста и най-различни състезания и конкурси.</p>
+                                    <p>
+                                    Бях изключително запален по математиката и се справях с лекота по този предмет.</p>
+                                    <p>
+                                    Имам няколко участия на състезания по математика за периода, в който учех в това училище.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <h2>ППМГ "Никола Обрешков"</h2>
+                            <div class="col-md-12 info-container" >
+                                <img src="content/images/ppmg/ppmg.jpg" class="img-fluid" alt="Responsive image">
+                            </div>
+                            <br>
+                            <div class="lead"><p>В периода от 2012 до 2015 година бях в общообразователна паралелка в ППМГ "Н. Обрешков".</p>
+                                <p>
+                                    След 7 клас кандидатствах отново и бях приет в паралелка със засилено извучаване на математика и
+                                информатика.
+                                </p>
+                                <p>
+                                    Участвал съм в няколко състезания и олимпиади по информатика.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-6" >
+                       <div class="jumbotron jumbotron-fluid">
+                           <div class="container">
+                               <h2>Софтуерен Университет
+                                   <br>
+                                   SoftUni
+                               </h2>
+                               <div class="col-md-12 info-container" >
+                                   <img src="content/images/softuni/softuni.png" class="img-fluid" alt="Responsive image">
+                               </div>
+                               <div class="lead">
+                                   <p>
+                                       През 2016 (когато бях в 8 клас) започнах да уча в Софтуерния Университет паралелно
+                                       с обучението ми в училище.
+                                   </p>
+                                   <p>
+                                       Имам изкарани 12 курса, от които 8 са с успех над 5.00 и имам съответните сертификати за тях.
+                                   </p>
+                                   <p>
+                                       Някои от изкараните курсове са:
+                                   <ul>
+                                   <li>Programming Basics</li>
+                                   <li>Programming Fundamentals</li>
+                                   <li>Software Technologies</li>
+                                   <li>JavaScript Fundamentals</li>
+                                   <li>JavaScript Advanced</li>
+                                   <li>JavaScript Applications</li>
+                                   <li>Java Advanced</li>
+                                   <li>Java OOP Basics</li>
+                                   <li>Java OOP Advanced</li>
+                                   <li>Node.js & Express.js Fundamentals</li>
+                                   <li>ReactJS Fundamentals</li>
+                                   <li>Angular 2 Fundamentals</li>
+                                   </ul>
+                                   </p>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="jumbotron jumbotron-fluid">
+                            <div class="container">
+                                <h2>Пловдивски университет "Паисий Хилендарски"</h2>
+                                <div class="col-md-12 info-container" >
+                                    <img src="content/images/pu/logo.jpg" class="img-fluid" alt="Responsive image">
+                                </div>
+                                <br>
+                                <div class="lead"><p>През 2019 след като завърших средното си образование в ППМГ "Никола Обрешков" кандидатствах
+                                и бях приет в Пловдивски университет "Паисий Хилендарски" със специалност "Бизнес инфромационни
+                                    технологии" във ФМИ.</p>
+                                    <p>
+                                        Специалността „Бизнес информационни технологии“ поставя акцент върху ефективното използване и прилагане
+                                        на информатиката и информационните технологии за подпомагане на бизнес операциите и вземането на решения
+                                        в софтуерното производство, индустрията и финансите.
+                                    </p>
+                                    <p>
+                                        В момента съм 1-ви курс и изучаваме засилено основите на компютърните науки и висшата математика.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="viewPersonalSkills">
+            <div class="col-md-12">
+                <h2 class="display-3"><h1>Лични умения и компетиции</h1></h2>
+                <hr class="hr-title">
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item">
+                                <a href="https://softuni.bg/certificates/details/9496/5b5a2a51" target="_blank">
+                                    https://softuni.bg/certificates/details/9496/5b5a2a51</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://softuni.bg/certificates/details/10789/503d0682" target="_blank">
+                                    https://softuni.bg/certificates/details/10789/503d0682</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="hhttps://softuni.bg/Certificates/Details/11902/ab79e451" target="_blank">
+                                    https://softuni.bg/Certificates/Details/11902/ab79e451</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://softuni.bg/certificates/details/13751/9d92d30f" target="_blank">
+                                    https://softuni.bg/certificates/details/13751/9d92d30f</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://softuni.bg/certificates/details/15778/64706c45" target="_blank">
+                                    https://softuni.bg/certificates/details/15778/64706c45</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://softuni.bg/certificates/details/16655/f4fb73cc" target="_blank">
+                                    https://softuni.bg/certificates/details/16655/f4fb73cc</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://softuni.bg/Certificates/Details/18703/315fe1ee" target="_blank">
+                                    https://softuni.bg/Certificates/Details/18703/315fe1ee</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://softuni.bg/certificates/details/23609/aa4f411b" target="_blank">
+                                    https://softuni.bg/certificates/details/23609/aa4f411b</a>
+                            </li>
+                        </ul>
+                        <br/>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="container col-md-6">
+                        <div id="myCarouse2" class="carousel slide" data-ride="carouse1">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarouse2" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarouse2" data-slide-to="1"></li>
+                                <li data-target="#myCarouse2" data-slide-to="2"></li>
+                                <li data-target="#myCarouse2" data-slide-to="3"></li>
+                                <li data-target="#myCarouse2" data-slide-to="4"></li>
+                                <li data-target="#myCarouse2" data-slide-to="5"></li>
+                                <li data-target="#myCarouse2" data-slide-to="6"></li>
+                                <li data-target="#myCarouse2" data-slide-to="7"></li>
+                                <li data-target="#myCarouse2" data-slide-to="8"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="image" src="content/images/softuni/certificat1.jpg" alt="SoftUni Certificate">
+                                </div>
+
+                                <div class="item">
+                                    <img class="image" src="content/images/softuni/certificat2.jpg" alt="SoftUni Certificate">
+                                </div>
+
+                                <div class="item">
+                                    <img class="image" src="content/images/softuni/certificat3.jpg" alt="SoftUni Certificate">
+                                </div>
+
+                                <div class="item">
+                                    <img class="image" src="content/images/softuni/certificat4.jpg" alt="SoftUni Certificate">
+                                </div>
+
+                                <div class="item">
+                                    <img class="image" src="content/images/softuni/certificat5.jpg" alt="SoftUni Certificate">
+                                </div>
+
+                                <div class="item">
+                                    <img class="image" src="content/images/softuni/certificat6.jpg" alt="SoftUni Certificate">
+                                </div>
+
+                                <div class="item">
+                                    <img class="image" src="content/images/softuni/certificat7.jpg" alt="SoftUni Certificate">
+                                </div>
+
+                                <div class="item">
+                                    <img class="image" src="content/images/softuni/certificat8.jpg" alt="SoftUni Certificate">
+                                </div>
+
+                            </div>
+                            <a class="left carousel-control" href="#myCarouse2" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarouse2" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 work-container">
+                        <h3 class="display-5">GitHub профил:</h3>
+                        <ul class="list-group list-group-flush text-left">
+                            <li class="list-group-item">
+                                <a href="https://github.com/DechkoTonev" target="_blank">
+                                    https://github.com/DechkoTonev</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 work-container text-right">
+                        <h3 class="display-5">Екипни проекти, в които съм участвал (GitHub):</h3>
+                        <ul class="list-group list-group-flush text-right">
+                            <li class="list-group-item">
+                                <a href="https://github.com/DechkoTonev/ReactJs-Fundamentals-TeamWork" target="_blank">
+                                    https://github.com/DechkoTonev/ReactJs-Fundamentals-TeamWork</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
